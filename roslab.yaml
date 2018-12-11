@@ -1,0 +1,15 @@
+name: loam-velodyne
+
+distro: kinetic
+
+build: catkin_make
+
+runtime: nvidia
+
+packages:
+  - ros-kinetic-velodyne
+
+volume:
+  - host_path: /DATASET
+    container_path: /DATASET
+    options: ro
